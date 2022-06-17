@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=DotGothic16&family=Montserrat+Alternates:wght@100;400&family=Montserrat:ital,wght@0,100;1,100&family=Noto+Sans:wght@400;600&display=swap');
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Anton', sans-serif;
+    font-family: 'DotGothic16', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.nav {
+    height: 10vh;
+    background: #371B58;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.left__nav {
+    display: inline-block;
+    font-weight: 800;
+}
+
+.center__nav {
+    display: inline-block;
+}
+
+.center__nav>ul>li {
+    display: inline-block;
+    padding: 15px;
+    cursor: pointer;
+}
+
+.center__nav>ul>li:hover {
+    color: #4C3575;
+}
+
+.left__nav > label:hover{
+    color: #4C3575;
+    cursor: pointer;
+}
+
+.main__content{
+    background-color: #4C3575;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left__section{
+    width: 50vw;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.left__section > img {
+    width: 80%;
+}
+
+.right__section{
+    width: 50vw;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.login{
+    padding: 25px 25px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #263238;
+    background: #5B4B8A;
+    text-align: center;
+    color: white;
+    border-radius: 10px;
+}
+
+.elements{
+    flex-direction: column;
+}
+
+.elements>input{
+    text-align: center;
+    border: none;
+    background-color: white;
+    outline: none;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 5px;
+}
+
+.elements  button{
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    background: white;
+    padding: 10px;
+    margin-top:5px;
+    font-weight: 800;
+    color: #263238;
+}
+.elements  button:hover{
+    background: #371B58;
+    color: white;
+}
+
+.footer{
+    height: 10vh;
+    background: #371B58;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.icons > i{
+    color: white;
+    padding: 5px;
+    cursor: pointer;
+    font-size: 36px;
+}
+
+.icons > i:hover{
+    color:#5B4B8A;
+}
+
+@media screen and (max-width: 600px){
+    .left__nav{
+        display: none;
+    }
+    .center__nav{
+        font-size: 60%;
+        width: 100vw;
+        height: 10vh;
+        text-align: center;
+    }
+    .main__content{
+        flex-direction: column;
+    }
+    .left__section{
+        width: 100vw;
+        height: 50vh;
+    }
+    .right__section{
+        width: 100vw;
+        height: 50vh;
+    }
+}
+
+/* 
+color palette
+https://colorhunt.co/palette/371b584c35755b4b8a7858a6 */
